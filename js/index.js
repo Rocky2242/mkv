@@ -1,24 +1,3 @@
-var isChrome = window.chrome;
-var myVendorName = window.navigator.vendor;
-var urlButton = document.getElementById("urlButton");
-var showHideInstructions = document.getElementById("showHideInstructions");
-var keyShortcutsButton = document.getElementById('keyShortcutsButton');
-var lightsButton = document.getElementById('lightsButton');
-var fader = document.getElementById('fader');
-var anchorURL = document.getElementById('anchorURL');
-anchorURL.target="_blank";
-var resizeButton = document.getElementById('resizeButton');
-var hiddenMenu = document.getElementById('hiddenMenu');
-var myRegex = /^http:\/\/.*\.(mkv|mp4)$/;
-var link;
-var videoArea = document.getElementById('videoArea');
-
-if (isChrome !== null && myVendorName === "Google Inc.") {
-	// pass
-} else {
-	
-}
-
 function triggerCloudy() {
 	link = document.getElementById("urlArea").value;
 	if (link.length > 15 && myRegex.test(link)) {
